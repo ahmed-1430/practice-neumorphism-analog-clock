@@ -115,3 +115,33 @@ body {
     transform: rotate(360deg) translateY(-100px);
      background: #3498db;
 }
+.sec-hand, .min-hand, .hour-hand {
+    position: relative;
+}
+.sec-hand .sec {
+    height: 180px;
+    width: 180px;
+    z-index: 6;
+}
+.min-hand .min {
+    height: 140px;
+    width: 140px;
+    z-index: 5;
+}
+.hour-hand .hour {
+    height: 110px;
+    width: 110px;
+    z-index: 4;
+}
+.sec, .min, .hour {
+    display: flex;
+    justify-content: center;    
+    position: absolute;
+}
+.sec::before {
+    position: absolute;
+    content: '';
+    height: 110px;
+    width: 3px;
+    background: #3498db;
+}
